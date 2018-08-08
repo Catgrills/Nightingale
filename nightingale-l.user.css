@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale-L
 @namespace      https://github.com/Catgrills/Nightingale-L
-@version        1.0.2
+@version        1.0.4
 @description    An userstyle for Twitter called Nightingale-L.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -157,6 +157,24 @@
         line-height: 20pt;
     }
 
+    .btn-link.translate-button {
+
+        /*** TRANSLATION ***/
+        color: #189EF3 !important;
+        font-size: 14pt;
+        font-stretch: condensed;
+    }
+
+    .btn-link.translate-button .Icon--translator {
+        color: #189EF3 !important;
+        top: -1px !important;
+    }
+
+    .tweet-translation {
+        border-top: 1px dotted var(--border-color);
+        margin-top: 10px;
+    }
+
     hr {
 
         /*** SEPARATOR ***/
@@ -165,7 +183,6 @@
 
     .AdaptiveRelatedSearches,
     .blocked-account-nav,
-    .btn-link.translate-button,
     .dashboard.dashboard-left,
     .dashboard.dashboard-right,
     .DashboardProfileCard.DashboardProfileCard--withoutStats.module,
@@ -193,7 +210,8 @@
     .SidebarCommonModules,
     .SidebarFilterModule,
     #sms-phone-delete-form #unsupported-carrier-alert,
-    .ThreadedConversation--header {
+    .ThreadedConversation--header,
+    .translation-attribution {
         display: none !important;
     }
 
@@ -316,7 +334,7 @@
     #user-dropdown-toggle {
 
         /** HEADER ACCOUNT ***/
-        margin-top: 5px !important;
+        margin-top: 4px !important;
     }
 
     .DashUserDropdown-userInfo .fullname,
@@ -1465,6 +1483,10 @@
         padding-bottom: 11px !important;
     }
 
+    .ProfileNav-item .follow-button .button-text.EdgeButton--medium {
+        margin-top: -1px !important;
+    }
+
     .ProfileNav-item .UserActions .EdgeButton--secondary,
     .ProfileNav-item .UserActions .EdgeButton--tertiary {
         background: #189EF3 !important;
@@ -1474,8 +1496,8 @@
         color: #FFF !important;
         font-size: 14pt !important;
         font-stretch: condensed;
-        padding-top: 8px;
-        padding-bottom: 10px !important;
+        padding-top: 9px;
+        padding-bottom: 11px !important;
     }
 
     .UserActions .EdgeButton--secondary {
@@ -1794,7 +1816,8 @@
     }
 
     .ProfileCard .EdgeButton.EdgeButton--primary,
-    .ProfileCard .EdgeButton.EdgeButton--secondary {
+    .ProfileCard .EdgeButton.EdgeButton--secondary,
+    .ProfileCard .EdgeButton.EdgeButton--danger {
         border: none !important;
         border-radius: 2px !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
@@ -1811,6 +1834,14 @@
 
     .ProfileCard .EdgeButton.EdgeButton--secondary {
         background: #088253;
+    }
+
+    .ProfileCard .EdgeButton.EdgeButton--danger {
+        background: #BF4A67 !important;
+    }
+
+    #profile-hover-container .EdgeButton {
+        padding-top: 8px !important;
     }
 
     .ProfileClusterFollow-title {
@@ -2467,3 +2498,4 @@
     }
 
 }
+
