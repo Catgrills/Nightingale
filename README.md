@@ -7,7 +7,7 @@ Preview of <i>Nightingale-L</i>.
 About
 -------------------------------
 
-<i>Nightingale-L</i> is an userstyle for <i>Twitter</i>.
+<i>Nightingale-L</i> is an user style for <i>Twitter</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
