@@ -1,13 +1,13 @@
 # Nightingale-L
 
-<img src="preview_1_nightingale-l.png" width="100%">
+<img src="preview.png" width="100%">
 
-Preview of <i>Nightingale-L</i>.
+Preview of <i>Nightingale</i>.
 
 About
 -------------------------------
 
-<i>Nightingale-L</i> is an user style for <i>Twitter</i>.
+<i>Nightingale</i> is an user style for <i>Twitter</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
@@ -23,7 +23,7 @@ Instruction
 
 <strong>Step 2 : Install the script </strong>
 + Via <b>userstyles</b> : <a href="https://userstyles.org/styles/162381/nightingale-l-dark-twitter-css">Dark theme</a> or <a href="https://userstyles.org/styles/162382/nightingale-l-light-twitter-css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Nightingale-L/master/nightingale-l.user.css">click here</a>
++ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Nightingale/master/user.css">click here</a>
 
 <strong>Step 3 : Install the font </strong>
 
