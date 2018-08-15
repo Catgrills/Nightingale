@@ -1,4 +1,4 @@
-# Nightingale-L
+# Nightingale
 
 <img src="preview.png" width="100%">
 
