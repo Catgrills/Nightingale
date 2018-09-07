@@ -7,7 +7,7 @@ Preview of <i>Nightingale</i>.
 About
 -------------------------------
 
-<i>Nightingale</i> is an user style for <i>Twitter</i>.
+<i>Nightingale</i> is a user style for <i>Twitter</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
