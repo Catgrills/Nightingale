@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.0.4
+@version        1.0.5
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1366,11 +1366,18 @@
     }
 
     .tweet .Icon--retweet::before {
-        background: no-repeat url("https://i.imgur.com/1Fy4FxF.png") center 80% !important;
+        background: no-repeat url("https://i.imgur.com/nsYme0n.png") center 80% !important;
         background-size: 20px auto !important;
         color: transparent;
         padding: 0px 1px;
     }
+    
+    .ProfileTweet-actionButtonUndo.js-actionButton.js-actionRetweet .Icon--retweet::before {
+        background: no-repeat url("https://i.imgur.com/1Fy4FxF.png") center 80% !important;
+        background-size: 20px auto !important;
+        color: transparent;
+        padding: 0px 1px;
+    }   
 
     .ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState .IconContainer {
         visibility: hidden;
