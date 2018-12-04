@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.0.5
+@version        1.0.6
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1359,48 +1359,8 @@
         font-stretch: condensed !important;
     }
 
-    .tweet .Icon--reply::before {
-        background: no-repeat url("https://i.imgur.com/o7IMlge.png") center 75% !important;
-        background-size: 15px auto !important;
-        color: transparent;
-    }
-
-    .tweet .Icon--retweet::before {
-        background: no-repeat url("https://i.imgur.com/nsYme0n.png") center 80% !important;
-        background-size: 20px auto !important;
-        color: transparent;
-        padding: 0px 1px;
-    }
-    
-    .ProfileTweet-actionButtonUndo.js-actionButton.js-actionRetweet .Icon--retweet::before {
-        background: no-repeat url("https://i.imgur.com/1Fy4FxF.png") center 80% !important;
-        background-size: 20px auto !important;
-        color: transparent;
-        padding: 0px 1px;
-    }   
-
-    .ProfileTweet-action.ProfileTweet-action--favorite.js-toggleState .IconContainer {
-        visibility: hidden;
-    }
-
-    .ProfileTweet-actionButton.js-actionFavorite .IconContainer {
-        filter: brightness(0) var(--invert) !important;
-        opacity: .3 !important;
-    }
-
-    .tweet .Icon--heart::before {
-        background: no-repeat url("https://i.imgur.com/X6ZxLrj.png") center 75% !important;
-        background-size: 15px auto !important;
-        color: transparent;
-        visibility: visible;
-    }
-
     .tweet .Icon--dm::before {
-        background: no-repeat url("https://i.imgur.com/VFIrKcM.png") center 75% !important;
-        background-size: 22px auto !important;
-        color: transparent;
-        padding: 2px 10px;
-        visibility: visible;
+        margin-top: 0px !important;
     }
 
     .js-nav.show-thread-link {
