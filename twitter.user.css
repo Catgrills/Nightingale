@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.0.7 
+@version        1.0.8
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -84,6 +84,12 @@
     div[data-testid="tweetButton"] div {
         background: #189EF3 !important;
     }
+    
+    div[role="status"] div[role="button"] {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+        height: 42px !important;
+        padding-bottom: 4px !important;
+    }
 
     a[data-testid="AppTabBar_Home_Link"],
     a[data-testid="AppTabBar_Explore_Link"],
@@ -124,6 +130,13 @@
 
     a[data-testid="SideNav_NewTweet_Button"] svg {
         height: 20px;
+    }
+    
+    div[aria-live="polite"] {
+        border: none !important;
+        font-size: 8pt !important;
+        height: 20px !important;
+        width: 20px !important;
     }
 
     /* RIGHT SIDEBAR */
@@ -249,6 +262,12 @@
 
     div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) {
         background: transparent !important;
+    }
+    
+    div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1),
+    div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(3) {
+        background: transparent;
+        border: none !important;
     }
 
     div[data-testid="primaryColumn"] article {
@@ -432,12 +451,7 @@
         border-radius: 2px !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
     }
-
-    div[aria-labelledby="modal-header"] div {
-        background-color: var(--card-bg-2);
-        border: none;
-    }
-
+    
     div[aria-labelledby="modal-header"] label {
         background-color: var(--card-bg-2);
         border-bottom: 1px solid var(--border-color);
@@ -448,7 +462,6 @@
     }
 
     div[aria-labelledby="modal-header"] * {
-        background-color: inherit;
         border-color: var(--border-color);
         color: var(--primary-color);
         font-size: 14pt;
@@ -578,10 +591,11 @@
         color: #FFF !important;
     }
 
-    div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) {
+    div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
         /*** HOME PERSONAL ***/
         background: var(--card-bg-2) !important;
+        border: none !important;
         border-radius: 2px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
         padding: 10px 10px 20px 10px !important;
@@ -605,6 +619,16 @@
 
     div[data-testid="addButton"] {
         border: none !important;
+    }
+
+}
+
+@-moz-document url("https://twitter.com/messages/compose"),
+url("https://twitter.com/compose/tweet") {
+    
+    div[aria-labelledby="modal-header"] div {
+        background-color: var(--card-bg-2);
+        border: none;
     }
 
 }
