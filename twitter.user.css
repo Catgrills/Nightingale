@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.0.9
+@version        1.1.0
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -135,6 +135,14 @@
 
         /*** THUMBNAILS BORDER RADIUS ***/
         border-radius: 4px !important;
+    }
+    
+     .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-6416eg {
+        
+        /*** THUMBNAILS LINK ***/
+        background: var(--card-bg-2) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 2px !important;
     }
 
     .r-1u4rsef,
