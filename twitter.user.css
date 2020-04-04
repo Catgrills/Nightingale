@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.0.8
+@version        1.0.9
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -79,23 +79,86 @@
     div[data-testid="tweetButton"] {
         background: #189EF3 !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+        padding-bottom: 2px;
+    }
+
+    div[data-testid="tweetButton"] * {
+        color: #FFF !important;
     }
 
     div[data-testid="tweetButton"] div {
         background: #189EF3 !important;
     }
-    
+
     div[role="status"] div[role="button"] {
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
         height: 42px !important;
         padding-bottom: 4px !important;
     }
 
+    .css-1dbjc4n.r-aqfbo4.r-rull8r.r-qklmqi.r-gtdqiz.r-ipm5af.r-1g40b8q {
+
+        /*** FIXED HEADER ***/
+        position: relative !important;
+    }
+
+    .r-14lw9ot,
+    .r-kemksi {
+
+        /*** YOUR TWEET INPUT ***/
+        background-color: inherit;
+    }
+
+    .css-1dbjc4n.r-16y2uox.r-1wbh5a2.r-1dqxon3 {
+
+        /*** GIF MODAL ***/
+        background: var(--card-bg);
+    }
+
+    .css-1dbjc4n.r-16y2uox.r-1wbh5a2.r-1dqxon3 * {
+        color: #FFF !important;
+    }
+
+    .r-5kkj8d {
+
+        /*** BORDER TOP WIDTH ***/
+        border-top: none;
+    }
+
+    .css-1dbjc4n.r-1p0dtai {
+
+        /*** THUMBNAILS FRAME ***/
+        max-width: initial !important;
+    }
+
+    .r-t23y2h {
+
+        /*** THUMBNAILS BORDER RADIUS ***/
+        border-radius: 4px !important;
+    }
+
+    .r-1u4rsef,
+    .r-1ysxnx4 {
+        background-color: transparent !important;
+    }
+
+    div[data-testid="controlBar"] * {
+
+        /*** VIDEO CONTROLS ***/
+        color: #FFF !important;
+    }
+
     a[data-testid="AppTabBar_Home_Link"],
     a[data-testid="AppTabBar_Explore_Link"],
     a[href*="ads.twitter.com"],
     a[href*="analytics.twitter.com"],
-    a[href*="support.twitter.com"] {
+    a[href*="support.twitter.com"],
+    .css-1dbjc4n.r-sdzlij.r-1p0dtai.r-xoduu5.r-1d2f490.r-xf4iuw.r-u8s1d.r-zchlnj.r-ipm5af.r-o7ynqc.r-6416eg
+
+    /*** HOVER ACTIONS BUTTONS ***/
+    ,
+    .css-1dbjc4n.r-sdzlij.r-1p0dtai.r-xoduu5.r-1d2f490.r-podbf7.r-u8s1d.r-zchlnj.r-ipm5af.r-o7ynqc.r-6416eg /*** HOVER DROPDOWN BUTTONS ***/,
+    .r-k5y9r7 /*** BORDERS ***/ {
         display: none !important;
     }
 
@@ -131,7 +194,7 @@
     a[data-testid="SideNav_NewTweet_Button"] svg {
         height: 20px;
     }
-    
+
     div[aria-live="polite"] {
         border: none !important;
         font-size: 8pt !important;
@@ -156,12 +219,30 @@
     }
 
     div[data-testid="sidebarColumn"] form div {
-        background-color: var(--card-bg) !important;
-        border: none;
         border-radius: 1px !important;
         box-shadow: none !important;
+        color: var(--primary-color);
         font-size: 14pt !important;
         font-stretch: condensed !important;
+    }
+
+    .r-urgr8i {
+        background: transparent;
+    }
+
+    .r-p1n3y5 {
+        border-color: transparent;
+    }
+
+    .css-1dbjc4n.r-1awozwy.r-qklmqi,
+    div[data-testid="sidebarColumn"] form div[role="option"] {
+        background: var(--card-bg-2);
+        border: none;
+    }
+
+    .r-qklmqi * {
+        color: var(--primary-color) !important;
+        font-stretch: condensed;
     }
 
     div[id*="typeaheadDropdown"] {
@@ -263,7 +344,7 @@
     div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) {
         background: transparent !important;
     }
-    
+
     div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1),
     div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(3) {
         background: transparent;
@@ -362,8 +443,8 @@
 
     div[role="alertdialog"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) {
         background: var(--card-bg-2) !important;
-        border-radius: 2px;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+        border-radius: 2px !important;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .5) !important;
     }
 
     div[role="alertdialog"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) * {
@@ -389,6 +470,7 @@
     div[role="tablist"] {
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
         margin-bottom: -4px;
+        height: 52px;
     }
 
     /* MESSAGES */
@@ -437,6 +519,10 @@
         border: none;
     }
 
+    .css-1dbjc4n.r-1twgtwe.r-sdzlij.r-rs99b7.r-1p0dtai.r-1mi75qu.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af {
+        background-color: initial !important;
+    }
+
     section[aria-labelledby="master-header"] div[role="tablist"],
     div[data-testid="primaryColumn"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) div[role="tablist"] {
         box-shadow: none !important;
@@ -449,9 +535,9 @@
 
     div[aria-labelledby="modal-header"] {
         border-radius: 2px !important;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .6) !important;
     }
-    
+
     div[aria-labelledby="modal-header"] label {
         background-color: var(--card-bg-2);
         border-bottom: 1px solid var(--border-color);
@@ -495,6 +581,21 @@
         border-color: var(--border-color);
     }
 
+    .r-qqzlmc {
+        max-height: 100% !important;
+    }
+
+    .css-1dbjc4n.r-1igl3o0.r-qklmqi.r-1adg3ll .r-1dgebii {
+        background: var(--card-bg-2);
+        border: 1px solid var(--border-color) !important;
+        border-radius: 2px !important;
+        padding: 12px 5px 14px 5px;
+    }
+
+    .r-1uaug3w {
+        background: var(--card-bg-2);
+    }
+
     /* PROFILE */
 
     /** DESCRIPTION : change the elements of the profile page **/
@@ -514,6 +615,8 @@
         background: var(--card-bg-2) !important;
         border-radius: 2px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+        margin-top: 10px !important;
+        margin-bottom: -4px !important;
     }
 
     div[data-testid="userActions"],
@@ -533,6 +636,11 @@
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
         height: 40px;
         padding-bottom: 3px;
+    }
+
+    div[data-testid*="-follow"] *,
+    div[data-testid*="-unfollow"] * {
+        color: #FFF !important;
     }
 
     div[role="presentation"] {
@@ -558,6 +666,21 @@
         font-stretch: condensed;
         font-weight: normal;
         line-height: 20pt;
+    }
+
+    /* EDIT PROFILE MODAL */
+
+    /** DESCRIPTION : change the elements of the edit profile modal **/
+    .r-urgr8i * {
+        color: #FFF !important;
+    }
+
+    .css-1dbjc4n.r-yfoy6g.r-1f0042m.r-16y2uox.r-1wbh5a2 {
+        background: var(--card-bg) !important;
+    }
+
+    .css-1dbjc4n.r-1uaug3w.r-rull8r.r-wgabs5.r-1jkafct.r-18u37iz {
+        border: 1px solid var(--border-color) !important;
     }
 
     /* MOMENTS */
@@ -621,11 +744,14 @@
         border: none !important;
     }
 
+    .r-yfoy6g {
+        background-color: transparent;
+    }
+
 }
 
 @-moz-document url("https://twitter.com/messages/compose"),
 url("https://twitter.com/compose/tweet") {
-    
     div[aria-labelledby="modal-header"] div {
         background-color: var(--card-bg-2);
         border: none;
