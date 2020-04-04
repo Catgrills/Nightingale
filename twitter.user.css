@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.1.0
+@version        1.1.1
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -683,14 +683,16 @@
         color: #FFF !important;
     }
 
-    .css-1dbjc4n.r-yfoy6g.r-1f0042m.r-16y2uox.r-1wbh5a2 {
+    .css-1dbjc4n.r-1f0042m.r-16y2uox.r-1wbh5a2 {
         background: var(--card-bg) !important;
+        border-radius: 1px;
     }
-
-    .css-1dbjc4n.r-1uaug3w.r-rull8r.r-wgabs5.r-1jkafct.r-18u37iz {
+    
+    .css-1dbjc4n.r-rull8r.r-wgabs5.r-18u37iz {
+        background: var(--card-bg-2) !important;
         border: 1px solid var(--border-color) !important;
     }
-
+    
     /* MOMENTS */
 
     /** DESCRIPTION : change the elements of the moments page **/
