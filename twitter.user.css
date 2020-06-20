@@ -219,11 +219,12 @@
         font-weight: bold;
         height: 20px !important;
         width: 20px !important;
-        margin-top: -4px !important;
-        margin-right: -4px !important;
+        margin-top: -10px !important;
+        margin-right: -10px !important;
     }
     
     div[aria-live="polite"] * {
+        color: var(--primary-color) !important;
         font-size: 12pt !important;
     }
     
