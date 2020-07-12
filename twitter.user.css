@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.1.7
+@version        1.1.8
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -709,6 +709,10 @@
         font-stretch: condensed;
         font-weight: normal;
         line-height: 20pt;
+    }
+    
+    #react-root div[data-testid="confirmationSheetConfirm"] * {
+        color: var(--primary-color) !important;
     }
 
     /* EDIT PROFILE MODAL */
