@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.1
+@version        1.2.2
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -129,7 +129,8 @@
         background-color: #1DA1F2 !important;
     }
 
-    .css-1dbjc4n.r-1ylenci.r-1phboty.r-rs99b7.r-18u37iz.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg {
+    .css-1dbjc4n.r-1ylenci.r-1phboty.r-rs99b7.r-18u37iz.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg,
+    div[data-testid="card.wrapper"] {
 
         /*** TWEET EXTERNAL LINK ***/
         background: var(--card-bg-2);
