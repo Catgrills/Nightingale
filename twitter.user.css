@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.3
+@version        1.2.4
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -130,6 +130,7 @@
     }
 
     .css-1dbjc4n.r-1ylenci.r-1phboty.r-rs99b7.r-18u37iz.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg,
+    .css-1dbjc4n.r-1867qdf.r-rs99b7.r-1loqt21.r-bfby7q.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg,
     div[data-testid="card.wrapper"] {
 
         /*** TWEET EXTERNAL LINK ***/
@@ -217,7 +218,8 @@
     /* THUMBNAILS */
 
     /** DESCRIPTION : change the elements of the thumbnails **/
-    .r-1ylenci {
+    .r-1ylenci,
+    .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-psjefw.r-1ny4l3l.r-1udh08x {
 
         /*** THUMBNAILS BORDER RADIUS ***/
         border: none;
@@ -307,10 +309,12 @@
         font-stretch: condensed;
     }
 
-    .css-1dbjc4n.r-1ylenci.r-qo02w8 {
-
+    .css-1dbjc4n.r-1ylenci.r-qo02w8,
+    .css-1dbjc4n.r-1867qdf  {
+        
         /*** USER POPUP ***/
         border: 1px solid var(--border-color);
+        border-radius: 2px;
         box-shadow: none !important;
     }
 
@@ -615,6 +619,7 @@
 
     .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af,
     .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-8fhv3p.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af,
+    .css-1dbjc4n.r-150rngu.r-z2wwpe.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af,
     div[id*="typeaheadDropdown"] {
 
         /*** SIDEBAR SEARCH DROPDOWN ***/
@@ -632,7 +637,8 @@
     }
 
     .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af *,
-    .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-8fhv3p.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af * {
+    .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-8fhv3p.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af *,
+    .css-1dbjc4n.r-150rngu.r-z2wwpe.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af * {
         border-color: var(--border-color);
     }
 
@@ -670,6 +676,12 @@
     .css-1dbjc4n.r-1ylenci.r-1phboty.r-rs99b7.r-ku1wi2.r-1udh08x {
         background: transparent !important;
         border-color: var(--border-color);
+    }
+    
+    .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-dr54s0.r-1udh08x {
+        background: transparent !important;
+        border: none;
+        border-radius: 1px !important;
     }
 
     div[data-testid="sidebarColumn"] section[role="region"],
