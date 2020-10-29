@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.4
+@version        1.2.5
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -802,7 +802,8 @@
         margin-bottom: -1px !important;
     }
 
-    div[data-testid="DMDrawer"] .css-1dbjc4n.r-rull8r.r-qklmqi.r-1n0n9yc.r-1g4ueg6.r-1loqt21.r-cgjvx2.r-184en5c {
+    div[data-testid="DMDrawer"] .css-1dbjc4n.r-rull8r.r-qklmqi.r-1n0n9yc.r-1g4ueg6.r-1loqt21.r-cgjvx2.r-184en5c,
+    div[data-testid="DMDrawer"] .css-1dbjc4n.r-rull8r.r-qklmqi.r-c67a83.r-1qk6wnv.r-1loqt21.r-cgjvx2.r-184en5c {
         border-color: var(--border-color);
     }
 
