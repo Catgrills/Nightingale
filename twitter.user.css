@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.6
+@version        1.2.7
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -572,6 +572,14 @@
     header[role="banner"] path {
         fill: var(--primary-color);
     }
+    
+    .r-18jsvk2 /*** WHITE ***/,
+    .r-jwli3a /*** BLUE ***/,
+    .r-1fmj7o5 /*** BLACK ***/ {
+        
+        /*** MORE BUTTON ICON ***/
+        color: var(--primary-color) !important;
+    } 
 
     header[role="banner"] a[aria-label="Twitter"] path {
         fill: #1DA1F2 !important;
@@ -740,6 +748,11 @@
     div[data-testid="sidebarColumn"] section[role="region"] span[dir="ltr"] {
         color: #1DA1F2;
     }
+    
+    div[data-testid="sidebarColumn"] section[role="region"] div[data-testid="trend"],
+    div[data-testid="sidebarColumn"] section[role="region"] div[role="button"] {
+        background: transparent !important;
+    }
 
     /* PRIMARY COLUMN */
 
@@ -906,15 +919,19 @@
     .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af div[role="button"] * {
         font-size: 12pt !important;
     }
-
-    main[role="main"] div[data-testid="primaryColumn"] a[data-testid="eventHero"] {
-
+    
+    main[role="main"] div[data-testid="primaryColumn"] a[data-testid="eventHero"],
+    main[role="main"] div[data-testid="primaryColumn"] div[data-testid="eventHero"] {
+        
         /*** TREND MAIN EVENT BANNER ***/
         border: 1px solid var(--border-color) !important;
     }
-
-    main[role="main"] div[data-testid="primaryColumn"] a[data-testid="eventHero"] * {
+    
+    main[role="main"] div[data-testid="primaryColumn"] a[data-testid="eventHero"] *,
+    main[role="main"] div[data-testid="primaryColumn"] div[data-testid="eventHero"] *  {
         color: #FFF !important;
+        font-size: 14pt;
+        font-stretch: condensed;
     }
 
     main[role="main"] div[data-testid="primaryColumn"] section[role="region"] div[data-testid="trend"] {
@@ -924,7 +941,35 @@
         border: 1px solid var(--border-color);
         margin-bottom: 5px !important;
     }
-
+    
+    main[role="main"] div[data-testid="primaryColumn"] section[role="region"] div[data-testid="trend"] * {
+        color: var(--primary-color);
+        font-size: 12pt;
+        font-stretch: condensed;
+    }
+    
+    a[href="/i/trends"] *,
+    a[href="/i/timeline"] * {
+        
+        /*** TREND VIEW MORE ***/
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+    }
+    
+    .css-1dbjc4n.r-13awgt0.r-19einr3 {
+        
+        /*** TREND WHAT'S HAPPENING ***/
+        background: var(--card-bg) !important;
+        border: 1px solid var(--border-color);
+        padding: 10px !important;
+    } 
+    
+    .css-1dbjc4n.r-13awgt0.r-19einr3 * {
+        color: var(--primary-color);
+        font-size: 12pt;
+        font-stretch: condensed;
+    }
+    
     /* NOTIFICATIONS */
 
     /** DESCRIPTION : change the elements of the notifications page **/
@@ -1142,7 +1187,7 @@
     }
 
     div[role="tablist"] span {
-        font-size: 14pt;
+        font-size: 12pt;
         font-stretch: condensed;
         line-height: 13pt !important;
     }
