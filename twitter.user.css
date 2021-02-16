@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.8
+@version        1.2.9
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -881,6 +881,11 @@
     div[data-testid="DMDrawer"] time {
         font-size: 12pt;
         font-stretch: condensed;
+    }
+    
+    div[data-testid="conversation"] * {
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
     }
 
     /* TREND */
