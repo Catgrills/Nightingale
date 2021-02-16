@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Nightingale
 @namespace      https://github.com/Catgrills/Nightingale
-@version        1.2.5
+@version        1.2.6
 @description    An user style for Twitter called Nightingale.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -59,6 +59,8 @@
     }
 
     div[role="menu"] a[href*="/analytics"],
+    div[role="menu"] a[href="/i/newsletters"],
+    div[role="menu"] a[href="/i/keyboard_shortcuts"],
     div[role="menu"] a[href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb"],
     div[role="menu"] a[href="https://support.twitter.com/"],
     div[data-testid="sidebarColumn"] nav,
@@ -95,11 +97,23 @@
         /*** RANDOM BACKGROUND COLOR ***/
         background: transparent;
     }
+        
+    .css-1dbjc4n.r-rull8r.r-qklmqi.r-1efd50x.r-5kkj8d.r-k5y9r7 {
+        
+        /*** RANDOM BORDER TOP HOME ***/
+        display: none;
+    }
 
     .r-hpzmsf {
 
         /*** RANDOM BORDER COLOR ***/
         background: var(--border-color) !important;
+    }
+    
+    .r-j7yic /*** WHITE ***/,
+    .r-1ila09b /*** BLUE ***/,
+    .r-1igl3o0 /*** BLACK ***/ {
+        border-color: var(--border-color);
     }
 
     .css-1dbjc4n.r-qklmqi.r-1adg3ll {
@@ -115,6 +129,14 @@
         background-color: transparent;
     }
 
+    div[data-testid="emptyState"] * {
+        
+        /*** EMPTY ***/
+        color: var(--primary-color) !important;
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
+    }
+    
     .r-p1n3y5 {
 
         /*** INPUT FOCUS BORDER ***/
@@ -275,6 +297,13 @@
         border: 1px solid var(--border-color) !important;
         border-radius: 2px !important;
         box-shadow: none !important;
+    }
+    
+    div[role="menu"] * {
+        color: var(--primary-color);
+        font-size: 12pt;
+        font-stretch: condensed;
+        line-height: 18pt;
     }
 
     a[role="menuitem"],
@@ -482,6 +511,7 @@
         border-color: var(--border-color);
     }
 
+    div[role="menu"] a[href*="/lists"],
     div[role="menu"] a[href*="/topics"],
     div[role="menu"] a[href*="/moments"],
     div[role="menu"] a[href*="/settings"],
@@ -615,6 +645,10 @@
         color: var(--primary-color);
         font-size: 12pt !important;
         z-index: 999 !important;
+    }
+    
+    .r-z1a2ur /*** WHITE ***/ {
+        background-color: transparent !important;
     }
 
     .css-1dbjc4n.r-150rngu.r-1f0042m.r-1d2f490.r-s6ysfe.r-h3f8nf.r-1rnoaur.r-1r851ge.r-u8s1d.r-zchlnj.r-ipm5af,
@@ -790,6 +824,25 @@
         background: var(--card-bg) !important;
         border: 1px solid var(--border-color);
         margin-bottom: -1px;
+    }
+    
+    main[role="main"] div[data-testid="primaryColumn"] div[data-testid="UserCell"] * {
+        color: var(--primary-color);
+        font-size: 12pt;
+        font-stretch: condensed;
+    }
+    
+       a[href*="/i/connect_people"] * {
+        
+        /*** WHO TO FOLLOW VIEW MORE BUTTON ***/
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+    }
+    
+    .css-1dbjc4n.r-1ihkh82.r-j7yic.r-rull8r.r-qklmqi.r-k5y9r7 {
+        
+        /*** WHO TO FOLLOW BORDERS ***/
+        display: none;
     }
 
     div[data-testid="DMDrawer"] {
@@ -1049,6 +1102,17 @@
         margin-bottom: 6px !important;
     }
 
+    .css-1dbjc4n.r-dr54s0.r-1orpq53.r-1b9bua6 * {
+        
+        /*** PROFILE BIO ***/
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
+    }
+    
+    .css-1dbjc4n.r-dr54s0.r-1orpq53.r-1b9bua6 span {
+        color: var(--primary-color);
+    }
+    
     .css-901oao.css-bfa6kz.r-1qd0xha.r-1gkfh8e.r-16dba41.r-1flse00.r-bcqeeo.r-qvutc0 {
 
         /*** PROFILE HEADER TWEET NUMBER ***/
@@ -1077,6 +1141,12 @@
         margin-right: 20px;
     }
 
+    div[role="tablist"] span {
+        font-size: 14pt;
+        font-stretch: condensed;
+        line-height: 13pt !important;
+    }
+    
     /* RETWEET */
 
     /** DESCRIPTION : change the elements of the retweet page **/
